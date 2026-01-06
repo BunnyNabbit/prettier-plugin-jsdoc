@@ -1,8 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`CLI Compatibility Should format via CLI with --write flag 1`] = `
-"/**
- * @param {number} [arg1=123] The width
+"/**@param {number} [arg1=123] The width
  *
  *   Default is \`123\`
  * @returns {void}
@@ -12,8 +11,7 @@ function myFunc(arg1) {}
 `;
 
 exports[`CLI Compatibility Should format with tailwindcss plugin via CLI without infinite recursion 1`] = `
-"/**
- * @param {String | Number} text - Some text description
+"/**@param {String | Number} text - Some text description
  * @param {String} [defaultValue="defaultTest"] TODO. Default is \`"defaultTest"\`
  * @returns {Boolean} Description for returns
  */
@@ -35,8 +33,7 @@ async function example(name: string): Promise<void> {}
 `;
 
 exports[`CLI Compatibility Should work with plugins in different orders via CLI 2`] = `
-"/**
- * @param {string} name
+"/**@param {string} name
  * @returns {Promise<void>}
  */
 async function example(name: string): Promise<void> {}
@@ -44,8 +41,7 @@ async function example(name: string): Promise<void> {}
 `;
 
 exports[`Should compatible with tailwindcss 1`] = `
-"/**
- * @param {String} [arg1="defaultTest"] Foo. Default is \`"defaultTest"\`
+"/**@param {String} [arg1="defaultTest"] Foo. Default is \`"defaultTest"\`
  * @param {number} [arg2=123] The width of the rectangle. Default is \`123\`
  * @param {number} [arg3=123] Default is \`123\`
  * @param {number} [arg4=Foo.bar.baz] Default is \`Foo.bar.baz\`
@@ -68,8 +64,7 @@ exports[`Should convert to single line if necessary 2`] = `
 
 exports[`Should convert to single line if necessary 3`] = `
 "//prettier-plugin-fake
-/**
- * Single line description
+/**Single line description
  *
  * @returns {Boolean} Always true
  */
@@ -79,8 +74,7 @@ exports[`Should convert to single line if necessary 3`] = `
 exports[`Should format jsDoc default values 1`] = `
 "//prettier-plugin-fake
 
-/**
- * @param {String} [arg1="defaultTest"] Foo. Default is \`"defaultTest"\`
+/**@param {String} [arg1="defaultTest"] Foo. Default is \`"defaultTest"\`
  * @param {number} [arg2=123] The width of the rectangle. Default is \`123\`
  * @param {number} [arg3=123] Default is \`123\`
  * @param {number} [arg4=Foo.bar.baz] Default is \`Foo.bar.baz\`
@@ -93,8 +87,7 @@ exports[`Should format jsDoc default values 2`] = `
 "//prettier-plugin-fake
 //prettier-plugin-fake
 
-/**
- * @param {String} [arg1="defaultTest"] Foo. Default is \`"defaultTest"\`
+/**@param {String} [arg1="defaultTest"] Foo. Default is \`"defaultTest"\`
  * @param {number} [arg2=123] The width of the rectangle. Default is \`123\`
  * @param {number} [arg3=123] Default is \`123\`
  * @param {number} [arg4=Foo.bar.baz] Default is \`Foo.bar.baz\`
@@ -110,8 +103,7 @@ import b from "b";
 import { k } from "k";
 import a from "a";
 
-/**
- * Function example description that was wrapped by hand so it have more then
+/**Function example description that was wrapped by hand so it have more then
  * one line and don't end with a dot REPEATED TWO TIMES BECAUSE IT WAS EASIER to
  * copy function example description that was wrapped by hand so it have more
  * then one line.
@@ -149,8 +141,7 @@ import b from "b";
 import { k } from "k";
 import a from "a";
 
-/**
- * Function example description that was wrapped by hand so it have more then
+/**Function example description that was wrapped by hand so it have more then
  * one line and don't end with a dot REPEATED TWO TIMES BECAUSE IT WAS EASIER to
  * copy function example description that was wrapped by hand so it have more
  * then one line.

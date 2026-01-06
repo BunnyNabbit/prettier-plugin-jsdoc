@@ -1,8 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`convert array to modern type 1`] = `
-"/**
- * @typedef {import("react-native-reanimated").default.Adaptable<number>} Adaptable
+"/**@typedef {import("react-native-reanimated").default.Adaptable<number>} Adaptable
  * @param {Adaptable} animNode
  * @param {object} InterpolationConfig
  * @param {ReadonlyArray<Adaptable>} InterpolationConfig.inputRange Like [0,1]

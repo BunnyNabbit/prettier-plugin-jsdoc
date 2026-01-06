@@ -230,6 +230,7 @@ export const getParser = (originalParse: Parser["parse"], parserName: string) =>
         }
 
         comment.value = comment.value.trimEnd();
+        comment.value = comment.value.trimStart();
 
         if (comment.value) {
           comment.value = addStarsToTheBeginningOfTheLines(

@@ -3,8 +3,7 @@
 exports[`File: prism-core.js 1`] = `
 "/// <reference lib=\\"WebWorker\\"/>
 
-/**
- * Prism: Lightweight, robust, elegant syntax highlighting
+/**Prism: Lightweight, robust, elegant syntax highlighting
  *
  * @license MIT [https://opensource.org/licenses/MIT](https://opensource.org/licenses/MIT)
  * @author Lea Verou [https://lea.verou.me](https://lea.verou.me)
@@ -17,8 +16,7 @@ var Prism = (function (_self) {
 	var uniqueId = 0;
 
 	var _ = {
-		/**
-		 * By default, Prism will attempt to highlight all code elements (by calling {@link Prism.highlightAll}) on the
+		/**By default, Prism will attempt to highlight all code elements (by calling {@link Prism.highlightAll}) on the
 		 * current page after the page finished loading. This might be a problem if e.g. you wanted to asynchronously load
 		 * additional languages or plugins yourself.
 		 *
@@ -41,8 +39,7 @@ var Prism = (function (_self) {
 		manual: _self.Prism && _self.Prism.manual,
 		disableWorkerMessageHandler: _self.Prism && _self.Prism.disableWorkerMessageHandler,
 
-		/**
-		 * A namespace for utility methods.
+		/**A namespace for utility methods.
 		 *
 		 * All function in this namespace that are not explicitly marked as _public_ are for **internal use only** and may
 		 * change or disappear at any time.
@@ -64,8 +61,7 @@ var Prism = (function (_self) {
 				}
 			},
 
-			/**
-			 * Returns the name of the type of the given value.
+			/**Returns the name of the type of the given value.
 			 *
 			 * @example
 			 * 	type(null) === 'Null';
@@ -85,8 +81,7 @@ var Prism = (function (_self) {
 				return Object.prototype.toString.call(o).slice(8, -1);
 			},
 
-			/**
-			 * Returns a unique number for the given object. Later calls will still return the same number.
+			/**Returns a unique number for the given object. Later calls will still return the same number.
 			 *
 			 * @param {Object} obj
 			 * @returns {number}
@@ -98,8 +93,7 @@ var Prism = (function (_self) {
 				return obj['__id'];
 			},
 
-			/**
-			 * Creates a deep clone of the given object.
+			/**Creates a deep clone of the given object.
 			 *
 			 * The main intended use of this function is to clone language definitions.
 			 *
@@ -148,8 +142,7 @@ var Prism = (function (_self) {
 				}
 			},
 
-			/**
-			 * Returns the Prism language of the given element set by a \`language-xxxx\` or \`lang-xxxx\` class.
+			/**Returns the Prism language of the given element set by a \`language-xxxx\` or \`lang-xxxx\` class.
 			 *
 			 * If no language is set for the element or the element is \`null\` or \`undefined\`, \`none\` will be returned.
 			 *
@@ -166,8 +159,7 @@ var Prism = (function (_self) {
 				return 'none';
 			},
 
-			/**
-			 * Returns the script element that is currently executing.
+			/**Returns the script element that is currently executing.
 			 *
 			 * This does **not** work for line script element.
 			 *
@@ -208,8 +200,7 @@ var Prism = (function (_self) {
 				}
 			},
 
-			/**
-			 * Returns whether a given class is active for \`element\`.
+			/**Returns whether a given class is active for \`element\`.
 			 *
 			 * The class can be activated if \`element\` or one of its ancestors has the given class and it can be deactivated
 			 * if \`element\` or one of its ancestors has the negated version of the given class. The _negated version_ of the
@@ -244,8 +235,7 @@ var Prism = (function (_self) {
 			}
 		},
 
-		/**
-		 * This namespace contains all currently loaded languages and the some helper functions to create and modify
+		/**This namespace contains all currently loaded languages and the some helper functions to create and modify
 		 * languages.
 		 *
 		 * @memberof Prism
@@ -253,8 +243,7 @@ var Prism = (function (_self) {
 		 * @public
 		 */
 		languages: {
-			/**
-			 * Creates a deep copy of the language with the given id and appends the given tokens.
+			/**Creates a deep copy of the language with the given id and appends the given tokens.
 			 *
 			 * If a token in \`redef\` also appears in the copied language, then the existing token in the copied language
 			 * will be overwritten at its original position.
@@ -292,8 +281,7 @@ var Prism = (function (_self) {
 				return lang;
 			},
 
-			/**
-			 * Inserts tokens _before_ another token in a language definition or any other grammar.
+			/**Inserts tokens _before_ another token in a language definition or any other grammar.
 			 *
 			 * ## Usage
 			 *
@@ -430,8 +418,7 @@ var Prism = (function (_self) {
 
 		plugins: {},
 
-		/**
-		 * This is the most high-level function in Prism’s API. It fetches all the elements that have a \`.language-xxxx\`
+		/**This is the most high-level function in Prism’s API. It fetches all the elements that have a \`.language-xxxx\`
 		 * class and then calls {@link Prism.highlightElement} on each one of them.
 		 *
 		 * This is equivalent to \`Prism.highlightAllUnder(document, async, callback)\`.
@@ -445,8 +432,7 @@ var Prism = (function (_self) {
 			_.highlightAllUnder(document, async, callback);
 		},
 
-		/**
-		 * Fetches all the descendants of \`container\` that have a \`.language-xxxx\` class and then calls
+		/**Fetches all the descendants of \`container\` that have a \`.language-xxxx\` class and then calls
 		 * {@link Prism.highlightElement} on each one of them.
 		 *
 		 * The following hooks will be run:
@@ -483,8 +469,7 @@ var Prism = (function (_self) {
 			}
 		},
 
-		/**
-		 * Highlights the code inside a single element.
+		/**Highlights the code inside a single element.
 		 *
 		 * The following hooks will be run:
 		 *
@@ -581,8 +566,7 @@ var Prism = (function (_self) {
 			}
 		},
 
-		/**
-		 * Low-level function, only use if you know what you’re doing. It accepts a string of text as input and the language
+		/**Low-level function, only use if you know what you’re doing. It accepts a string of text as input and the language
 		 * definitions to use, and returns a string with the HTML produced.
 		 *
 		 * The following hooks will be run:
@@ -615,8 +599,7 @@ var Prism = (function (_self) {
 			return Token.stringify(_.util.encode(env.tokens), env.language);
 		},
 
-		/**
-		 * This is the heart of Prism, and the most low-level function you can use. It accepts a string of text as input and
+		/**This is the heart of Prism, and the most low-level function you can use. It accepts a string of text as input and
 		 * the language definitions to use, and returns an array with the tokenized code.
 		 *
 		 * When the language definition includes nested tokens, the function is called recursively on each of these tokens.
@@ -658,16 +641,14 @@ var Prism = (function (_self) {
 			return toArray(tokenList);
 		},
 
-		/**
-		 * @memberof Prism
+		/**@memberof Prism
 		 * @namespace
 		 * @public
 		 */
 		hooks: {
 			all: {},
 
-			/**
-			 * Adds the given callback to the list of callbacks for the given hook.
+			/**Adds the given callback to the list of callbacks for the given hook.
 			 *
 			 * The callback will be invoked when the hook it is registered for is run. Hooks are usually directly run by a
 			 * highlight function but you can also run hooks yourself.
@@ -686,8 +667,7 @@ var Prism = (function (_self) {
 				hooks[name].push(callback);
 			},
 
-			/**
-			 * Runs a hook invoking all registered callbacks with the given environment variables.
+			/**Runs a hook invoking all registered callbacks with the given environment variables.
 			 *
 			 * Callbacks will be invoked synchronously and in the order in which they were registered.
 			 *
@@ -717,8 +697,7 @@ var Prism = (function (_self) {
 	//
 	//   @typedef {InstanceType<import(\\"./prism-core\\")[\\"Token\\"]>} Token
 
-	/**
-	 * Creates a new token.
+	/**Creates a new token.
 	 *
 	 * @class
 	 * @param {string} type See {@link Token#type type}
@@ -729,8 +708,7 @@ var Prism = (function (_self) {
 	 * @public
 	 */
 	function Token(type, content, alias, matchedStr) {
-		/**
-		 * The type of the token.
+		/**The type of the token.
 		 *
 		 * This is usually the key of a pattern in a {@link Grammar}.
 		 *
@@ -739,8 +717,7 @@ var Prism = (function (_self) {
 		 * @see GrammarToken
 		 */
 		this.type = type;
-		/**
-		 * The strings or tokens contained by this token.
+		/**The strings or tokens contained by this token.
 		 *
 		 * This will be a token stream if the pattern matched also defined an \`inside\` grammar.
 		 *
@@ -748,8 +725,7 @@ var Prism = (function (_self) {
 		 * @public
 		 */
 		this.content = content;
-		/**
-		 * The alias(es) of the token.
+		/**The alias(es) of the token.
 		 *
 		 * @type {string | string[]}
 		 * @public
@@ -760,8 +736,7 @@ var Prism = (function (_self) {
 		this.length = (matchedStr || '').length | 0;
 	}
 
-	/**
-	 * A token stream is an array of strings and {@link Token Token} objects.
+	/**A token stream is an array of strings and {@link Token Token} objects.
 	 *
 	 * Token streams have to fulfill a few properties that are assumed by most functions (mostly internal ones) that process
 	 * them.
@@ -776,8 +751,7 @@ var Prism = (function (_self) {
 	 * @public
 	 */
 
-	/**
-	 * Converts the given token or token stream to an HTML representation.
+	/**Converts the given token or token stream to an HTML representation.
 	 *
 	 * The following hooks will be run:
 	 *
@@ -841,8 +815,7 @@ var Prism = (function (_self) {
 		);
 	};
 
-	/**
-	 * @param {RegExp} pattern
+	/**@param {RegExp} pattern
 	 * @param {number} pos
 	 * @param {string} text
 	 * @param {boolean} lookbehind
@@ -860,8 +833,7 @@ var Prism = (function (_self) {
 		return match;
 	}
 
-	/**
-	 * @private
+	/**@private
 	 * @param {string} text
 	 * @param {LinkedList<string | Token>} tokenList
 	 * @param {any} grammar
@@ -1020,8 +992,7 @@ var Prism = (function (_self) {
 		}
 	}
 
-	/**
-	 * @private
+	/**@private
 	 * @template T
 	 * @typedef LinkedListNode
 	 * @property {T} value
@@ -1029,8 +1000,7 @@ var Prism = (function (_self) {
 	 * @property {LinkedListNode<T> | null} next The next node.
 	 */
 
-	/**
-	 * @private
+	/**@private
 	 * @template T
 	 */
 	function LinkedList() {
@@ -1047,8 +1017,7 @@ var Prism = (function (_self) {
 		this.length = 0;
 	}
 
-	/**
-	 * Adds a new node with the given value to the list.
+	/**Adds a new node with the given value to the list.
 	 *
 	 * @template T
 	 * @param {LinkedList<T>} list
@@ -1067,8 +1036,7 @@ var Prism = (function (_self) {
 
 		return newNode;
 	}
-	/**
-	 * Removes \`count\` nodes after the given node. The given node will not be removed.
+	/**Removes \`count\` nodes after the given node. The given node will not be removed.
 	 *
 	 * @template T
 	 * @param {LinkedList<T>} list
@@ -1084,8 +1052,7 @@ var Prism = (function (_self) {
 		next.prev = node;
 		list.length -= i;
 	}
-	/**
-	 * @template T
+	/**@template T
 	 * @param {LinkedList<T>} list
 	 * @returns {T[]}
 	 */
@@ -1177,8 +1144,7 @@ if (typeof global !== 'undefined') {
 
 // some additional documentation/types
 
-/**
- * The expansion of a simple \`RegExp\` literal to support additional properties.
+/**The expansion of a simple \`RegExp\` literal to support additional properties.
  *
  * @typedef GrammarToken
  * @property {RegExp} pattern The regular expression of the token.
@@ -1199,16 +1165,14 @@ if (typeof global !== 'undefined') {
  * @public
  */
 
-/**
- * @typedef Grammar
+/**@typedef Grammar
  * @type {Object<string, RegExp | GrammarToken | (RegExp | GrammarToken)[]>}
  * @property {Grammar} [rest] An optional grammar object that will be appended to this grammar.
  * @global
  * @public
  */
 
-/**
- * A function which will invoked after an element was successfully highlighted.
+/**A function which will invoked after an element was successfully highlighted.
  *
  * @callback HighlightCallback
  * @param {Element} element The element successfully highlighted.
@@ -1217,8 +1181,7 @@ if (typeof global !== 'undefined') {
  * @public
  */
 
-/**
- * A description for test
+/**A description for test
  *
  * @callback HookCallback
  * @param {Object<string, any>} env The environment variables of the hook.

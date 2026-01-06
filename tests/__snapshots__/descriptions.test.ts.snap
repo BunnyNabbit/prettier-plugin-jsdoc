@@ -1,8 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`# in block code 1`] = `
-"/**
- * \`\`\`py
+"/**\`\`\`py
  * # This program adds two numbers
  *
  * num1 = 1.5
@@ -19,8 +18,7 @@ exports[`# in block code 1`] = `
 `;
 
 exports[`\`#\` in text 1`] = `
-"/**
- * JS: \`console.log("foo # bar");\`
+"/**JS: \`console.log("foo # bar");\`
  *
  * Some # text
  *
@@ -30,8 +28,7 @@ exports[`\`#\` in text 1`] = `
 `;
 
 exports[`Code in description 1`] = `
-"/**
- * Inspired from react-native View
+"/**Inspired from react-native View
  *
  * \`\`\`js
  * import { View } from "react-native";
@@ -58,8 +55,7 @@ exports[`Code in description 1`] = `
 `;
 
 exports[`Code in description 2`] = `
-"/**
- * Description
+"/**Description
  *
  *     an indented code block
  *     of a few lines.
@@ -68,8 +64,7 @@ exports[`Code in description 2`] = `
 `;
 
 exports[`Code in description 3`] = `
-"/**
- * Description
+"/**Description
  *
  * \`\`\`
  * an indented code block
@@ -80,8 +75,7 @@ exports[`Code in description 3`] = `
 `;
 
 exports[`Code in description 4`] = `
-"/**
- * Description
+"/**Description
  *
  *     A fenced code block
  *     spanning a few lines.
@@ -90,8 +84,7 @@ exports[`Code in description 4`] = `
 `;
 
 exports[`Code in description 5`] = `
-"/**
- * Description
+"/**Description
  *
  * \`\`\`
  * A fenced code block
@@ -102,8 +95,7 @@ exports[`Code in description 5`] = `
 `;
 
 exports[`Jsdoc link in description 1`] = `
-"/**
- * Calculate the
+"/**Calculate the
  * {@link https://en.wikipedia.org/wiki/Complement_(set_theory)#Relative_complement difference}
  * between two sets.
  *
@@ -112,15 +104,13 @@ exports[`Jsdoc link in description 1`] = `
  */
 export function difference<T>(first: Set<T>, second: Set<T>): Set<T>;
 
-/**
- * Calculate the
+/**Calculate the
  * {@link https://en.wikipedia.org/wiki/Complement_(set_theory)#Relative_complement difference}
  * {@link https://en.wikipedia.org/wiki/Complement_(set_theory)#Relative_complement difference}
  * between two sets.
  */
 
-/**
- * Calculate the
+/**Calculate the
  * {@link https://en.wikipedia.org/wiki/Complement_(set_theory)#Relative_complement difference}
  * between {@link https://en.wikipedia.org/wiki/Complement} between two sets.
  */
@@ -128,8 +118,7 @@ export function difference<T>(first: Set<T>, second: Set<T>): Set<T>;
 `;
 
 exports[`Jsdoc link synonyms in description 1`] = `
-"/**
- * Calculate the
+"/**Calculate the
  * {@linkcode https://en.wikipedia.org/wiki/Complement_(set_theory)#Relative_complement difference}
  * between two sets.
  *
@@ -138,22 +127,19 @@ exports[`Jsdoc link synonyms in description 1`] = `
  */
 export function difference<T>(first: Set<T>, second: Set<T>): Set<T>;
 
-/**
- * Calculate the
+/**Calculate the
  * {@linkcode https://en.wikipedia.org/wiki/Complement_(set_theory)#Relative_complement difference}
  * {@linkcode https://en.wikipedia.org/wiki/Complement_(set_theory)#Relative_complement difference}
  * between two sets.
  */
 
-/**
- * Calculate the
+/**Calculate the
  * {@linkcode https://en.wikipedia.org/wiki/Complement_(set_theory)#Relative_complement difference}
  * between {@linkcode https://en.wikipedia.org/wiki/Complement} between two
  * sets.
  */
 
-/**
- * Calculate the
+/**Calculate the
  * {@linkplain https://en.wikipedia.org/wiki/Complement_(set_theory)#Relative_complement difference}
  * between two sets.
  *
@@ -162,15 +148,13 @@ export function difference<T>(first: Set<T>, second: Set<T>): Set<T>;
  */
 export function difference<T>(first: Set<T>, second: Set<T>): Set<T>;
 
-/**
- * Calculate the
+/**Calculate the
  * {@linkplain https://en.wikipedia.org/wiki/Complement_(set_theory)#Relative_complement difference}
  * {@linkplain https://en.wikipedia.org/wiki/Complement_(set_theory)#Relative_complement difference}
  * between two sets.
  */
 
-/**
- * Calculate the
+/**Calculate the
  * {@linkplain https://en.wikipedia.org/wiki/Complement_(set_theory)#Relative_complement difference}
  * between {@linkplain https://en.wikipedia.org/wiki/Complement} between two
  * sets.
@@ -179,8 +163,7 @@ export function difference<T>(first: Set<T>, second: Set<T>): Set<T>;
 `;
 
 exports[`Jsx tsx css  1`] = `
-"/**
- * \`\`\`js
+"/**\`\`\`js
  * let a;
  * \`\`\`
  *
@@ -202,8 +185,7 @@ exports[`Jsx tsx css  1`] = `
 `;
 
 exports[`Link  1`] = `
-"/**
- * Name of something.
+"/**Name of something.
  *
  * See [documentation](1) for more details.
  *
@@ -215,8 +197,7 @@ exports[`Link  1`] = `
 `;
 
 exports[`List in tags 1`] = `
-"/**
- * @param {any} var An example list:
+"/**@param {any} var An example list:
  *
  *   - Item 1
  *   - Item 2
@@ -224,8 +205,7 @@ exports[`List in tags 1`] = `
  * @returns {Promise} A return value.
  */
 
-/**
- * @param {any} var An example list:
+/**@param {any} var An example list:
  *
  *   - Item 1
  *   - Item 2
@@ -234,15 +214,13 @@ exports[`List in tags 1`] = `
 `;
 
 exports[`Long words 1`] = `
-"/**
- * 1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567
+"/**1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567
  */
 "
 `;
 
 exports[`Markdown Table 1`] = `
-"/**
- * Description
+"/**Description
  *
  * | A   | B   | C   |
  * | --- | --- | --- |
@@ -261,8 +239,7 @@ exports[`Markdown Table 1`] = `
 `;
 
 exports[`Markdown Table 2`] = `
-"/**
- * | A   | B   | C   |
+"/**| A   | B   | C   |
  * | --- | --- | --- |
  * | C   | V   | B   |
  * | 1   | 2   | 3   |
@@ -271,8 +248,7 @@ exports[`Markdown Table 2`] = `
 `;
 
 exports[`Markdown Table 3`] = `
-"/**
- * @param {string} a Description
+"/**@param {string} a Description
  *
  *   | A   | B   | C   |
  *   | --- | --- | --- |
@@ -283,8 +259,7 @@ exports[`Markdown Table 3`] = `
 `;
 
 exports[`Markdown Table 4`] = `
-"/**
- * Description
+"/**Description
  *
  *     fenced code
  *     | A| B |C |
@@ -301,8 +276,7 @@ exports[`Markdown Table 4`] = `
 `;
 
 exports[`Markdown Table 5`] = `
-"/**
- * Description
+"/**Description
  *
  * Indented code
  *
@@ -320,8 +294,7 @@ exports[`Markdown link 1`] = `
 `;
 
 exports[`Markdown table replaced  1`] = `
-"/**
- * @param options Options object for setting file system flags (default:
+"/**@param options Options object for setting file system flags (default:
  *   \`"r"\`):
  *
  *   | flags   | description                                                                                                    |
@@ -344,8 +317,7 @@ exports[`Markdown table replaced  1`] = `
 `;
 
 exports[`Nested list 1`] = `
-"/**
- * 1. Foo
+"/**1. Foo
  *
  *    1. Entry 1
  *    2. Entry 2
@@ -363,8 +335,7 @@ exports[`Nested list 1`] = `
 `;
 
 exports[`New Lines with star 1`] = `
-"/**
- * Simplifies the token stream to ease the matching with the expected token
+"/**Simplifies the token stream to ease the matching with the expected token
  * stream.
  *
  * - Strings are kept as-is
@@ -378,8 +349,7 @@ exports[`New Lines with star 1`] = `
 `;
 
 exports[`New Lines with star 2`] = `
-"/**
- * Some comment text.
+"/**Some comment text.
  *
  * **Warning:** I am a warning.
  */
@@ -392,8 +362,7 @@ exports[`New line with \\ 1`] = `
 `;
 
 exports[`Non-english description with dot 1`] = `
-"/**
- * Wir brauchen hier eine effizientere Lösung. Die generierten Dateien sind zu
+"/**Wir brauchen hier eine effizientere Lösung. Die generierten Dateien sind zu
  * groß.
  *
  * Wir brauchen hier eine effizientere Lösung. Die generierten Dateien sind zu
@@ -405,8 +374,7 @@ exports[`Non-english description with dot 1`] = `
  * @param a Ssss.
  */
 
-/**
- * Unicode est un standard informatique qui permet des échanges de textes dans
+/**Unicode est un standard informatique qui permet des échanges de textes dans
  * différentes langues, à un niveau mondial. Il est développé par le Consortium
  * Unicode, qui vise au codage de texte écrit en donnant à tout caractère de
  * n'importe quel système d'écriture un nom et un identifiant numérique, et ce
@@ -416,16 +384,14 @@ exports[`Non-english description with dot 1`] = `
  * @see https://fr.wikipedia.org/wiki/Unicode
  */
 
-/**
- * Юнико́д[1] (чаще всего) или Унико́д[2] (англ. Unicode) — стандарт кодирования
+/**Юнико́д[1] (чаще всего) или Унико́д[2] (англ. Unicode) — стандарт кодирования
  * символов, включающий в себя знаки почти всех письменных языков мира[3]. В
  * настоящее время стандарт является преобладающим в Интернете.
  *
  * @see https://ru.wikipedia.org/wiki/%D0%AE%D0%BD%D0%B8%D0%BA%D0%BE%D0%B4
  */
 
-/**
- * Unicode（ユニコード）は、符号化文字集合や文字符号化方式などを定めた、文字コードの業界規格。文字集合（文字セット）が単一の大規模文字セットであること（「Uni」という名はそれに由来する）などが特徴である.
+/**Unicode（ユニコード）は、符号化文字集合や文字符号化方式などを定めた、文字コードの業界規格。文字集合（文字セット）が単一の大規模文字セットであること（「Uni」という名はそれに由来する）などが特徴である.
  *
  * @see https://ja.wikipedia.org/wiki/Unicode
  */
@@ -433,8 +399,7 @@ exports[`Non-english description with dot 1`] = `
 `;
 
 exports[`Not Capitalizing 1`] = `
-"/**
- * simplifies the token stream to ease the matching with the expected token
+"/**simplifies the token stream to ease the matching with the expected token
  * stream.
  *
  * Simplifies the token stream to ease the matching with the expected token
@@ -451,8 +416,7 @@ exports[`Not Capitalizing 1`] = `
 `;
 
 exports[`Not Capitalizing 2`] = `
-"/**
- * Simplifies the token stream to ease the matching with the expected token
+"/**Simplifies the token stream to ease the matching with the expected token
  * stream.
  *
  * Simplifies the token stream to ease the matching with the expected token
@@ -469,8 +433,7 @@ exports[`Not Capitalizing 2`] = `
 `;
 
 exports[`Reference-style Links  1`] = `
-"/**
- * Name of something.
+"/**Name of something.
  *
  * See [documentation][1] for more details.
  *
@@ -480,8 +443,7 @@ exports[`Reference-style Links  1`] = `
 `;
 
 exports[`Reference-style Links  2`] = `
-"/**
- * This is a [link][1] test.
+"/**This is a [link][1] test.
  *
  * [1]: https://www.google.com/
  *
@@ -494,8 +456,7 @@ function test(value) {
 `;
 
 exports[`Reference-style Links  3`] = `
-"/**
- * Testing docBlocks.
+"/**Testing docBlocks.
  *
  * @param ...args Arguments.
  *
@@ -509,8 +470,7 @@ exports[`Reference-style Links  3`] = `
 `;
 
 exports[`code in description 1`] = `
-"/**
- * \`Touchable\`: Taps done right.
+"/**\`Touchable\`: Taps done right.
  *
  * You hook your \`ResponderEventPlugin\` events into \`Touchable\`. \`Touchable\`
  * will measure time/geometry and tells you when to give feedback to the user.
@@ -610,8 +570,7 @@ exports[`code in description 1`] = `
 `;
 
 exports[`code in description 2`] = `
-"/**
- * Utility type for getting the values for specific style keys.
+"/**Utility type for getting the values for specific style keys.
  *
  * # test:
  *
@@ -629,8 +588,7 @@ exports[`code in description 2`] = `
 `;
 
 exports[`description contain paragraph 1`] = `
-"/**
- * Does the following things:
+"/**Does the following things:
  *
  * 1. Thing 1
  * 2. Thing 2
@@ -640,8 +598,7 @@ exports[`description contain paragraph 1`] = `
 `;
 
 exports[`description contain paragraph 2`] = `
-"/**
- * Does the following things:
+"/**Does the following things:
  *
  * 1. Thing 1
  * 2. Thing 2
@@ -652,8 +609,7 @@ exports[`description contain paragraph 2`] = `
 
 exports[`description contain paragraph 3`] = `
 "class test {
-  /**
-   * Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+  /**Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
    * tempor incididunt ut labore et dolore magna aliqua.
    *
    * Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
@@ -682,14 +638,12 @@ exports[`description contain paragraph 3`] = `
 `;
 
 exports[`description contain paragraph 4`] = `
-"/**
- * Transforms data
+"/**Transforms data
  *
  * @override
  */
 
-/**
- * Bounce give a renderContent and show that around children when isVisible is
+/**Bounce give a renderContent and show that around children when isVisible is
  * true
  *
  * @example
@@ -706,8 +660,7 @@ exports[`description contain paragraph 4`] = `
  * @type {React.FC<BounceProps>}
  */
 
-/**
- * @param {string} a
+/**@param {string} a
  *
  *   \`\`\`js
  *   var a = 0;
@@ -717,8 +670,7 @@ exports[`description contain paragraph 4`] = `
 `;
 
 exports[`description new line with dash 1`] = `
-"/**
- * We will allow the scroll view to give up its lock iff it acquired the lock
+"/**We will allow the scroll view to give up its lock iff it acquired the lock
  * during an - animation. This is a very useful default that happens to
  * satisfy many common user experiences.
  *
@@ -736,8 +688,7 @@ function scrollResponderHandleTerminationRequest() {
   return !this.state.observedScrollSinceBecomingResponder;
 }
 
-/**
- * - Stop a scroll on the left edge, then turn that into an outer view's
+/**- Stop a scroll on the left edge, then turn that into an outer view's
  *   backswipe.
  * - Stop a scroll mid-bounce at the top, continue pulling to have the outer
  *   view dismiss.
@@ -746,8 +697,7 @@ function scrollResponderHandleTerminationRequest() {
   return !this.state.observedScrollSinceBecomingResponder;
 }
 
-/**
- * - Stop a scroll on the left edge, then turn that into an outer view's
+/**- Stop a scroll on the left edge, then turn that into an outer view's
  *   backswipe.
  * - Stop a scroll mid-bounce at the top, continue pulling to have the outer
  *   view dismiss.
@@ -759,8 +709,7 @@ function scrollResponderHandleTerminationRequest() {
 `;
 
 exports[`description new line with dash 2`] = `
-"/**
- * Measures the \`HitRect\` node on activation. The Bounding rectangle is with
+"/**Measures the \`HitRect\` node on activation. The Bounding rectangle is with
  * respect to viewport - not page, so adding the \`pageXOffset/pageYOffset\`
  * should result in points that are in the same coordinate system as an
  * event's \`globalX/globalY\` data values.
@@ -775,8 +724,7 @@ exports[`description new line with dash 2`] = `
 `;
 
 exports[`description new line with dash 3`] = `
-"/**
- * Handles parsing of a test case file.
+"/**Handles parsing of a test case file.
  *
  * A test case file consists of at least two parts, separated by a line of
  * dashes. This separation line must start at the beginning of the line and
@@ -803,16 +751,14 @@ exports[`description new line with dash 3`] = `
 `;
 
 exports[`description start underscores 1`] = `
-"/**
- * @param {string} a **very** important!
+"/**@param {string} a **very** important!
  * @param {string} b _less_ important...
  */
 "
 `;
 
 exports[`empty lines 1`] = `
-"/**
- * Foo
+"/**Foo
  *
  * Bar
  *
@@ -822,8 +768,7 @@ exports[`empty lines 1`] = `
 `;
 
 exports[`jsdocLineWrappingStyle balance 1`] = `
-"/**
- * This is a carefully formatted description
+"/**This is a carefully formatted description
  * with multiple lines that are balanced
  * to avoid runts and improve readability.
  *
@@ -834,8 +779,7 @@ exports[`jsdocLineWrappingStyle balance 1`] = `
 `;
 
 exports[`jsdocLineWrappingStyle balance 2`] = `
-"/**
- * This is a very long line that exceeds
+"/**This is a very long line that exceeds
  * the print width limit and should be
  * wrapped using greedy wrapping even in
  * balance mode because it's too long to
@@ -850,8 +794,7 @@ exports[`jsdocLineWrappingStyle balance 2`] = `
 `;
 
 exports[`jsdocLineWrappingStyle balance 3`] = `
-"/**
- * This is a carefully formatted description with multiple lines that are
+"/**This is a carefully formatted description with multiple lines that are
  * balanced to avoid runts and improve readability.
  *
  * @param {string} name - The name parameter
@@ -861,8 +804,7 @@ exports[`jsdocLineWrappingStyle balance 3`] = `
 `;
 
 exports[`jsdocLineWrappingStyle balance 4`] = `
-"/**
- * @param {string} name - This is a carefully formatted
+"/**@param {string} name - This is a carefully formatted
  *   parameter description with balanced lines
  *   that should be preserved in balance mode
  * @param {number} age - Another parameter with
@@ -873,8 +815,7 @@ exports[`jsdocLineWrappingStyle balance 4`] = `
 `;
 
 exports[`jsdocLineWrappingStyle balance with link in description 1`] = `
-"/**
- * @param {string} name - This is a carefully formatted parameter description
+"/**@param {string} name - This is a carefully formatted parameter description
  *   with balanced lines that should be preserved in balance mode issue:
  *   {@link https://github.com/hosseinmd/prettier-plugin-jsdoc/issues/98?prettier-plugin-jsdocprettier-plugin-jsdocprettier-plugin-jsdoc}
  * @param {number} age - Another parameter with
@@ -885,8 +826,7 @@ exports[`jsdocLineWrappingStyle balance with link in description 1`] = `
 `;
 
 exports[`jsdocLineWrappingStyle balance with paraghraph in description 1`] = `
-"/**
- * This is a carefully formatted that should be preserved in balance mode that
+"/**This is a carefully formatted that should be preserved in balance mode that
  * should be preserved in balance mode
  *
  * Paragraph description with balanced lines
@@ -898,8 +838,7 @@ exports[`jsdocLineWrappingStyle balance with paraghraph in description 1`] = `
 `;
 
 exports[`matches prettier markdown format 1`] = `
-"/**
- * # Header
+"/**# Header
  *
  * _Look,_ code blocks are formatted _too!_
  *
@@ -929,8 +868,7 @@ exports[`matches prettier markdown format 1`] = `
 `;
 
 exports[`numbers and code in description 1`] = `
-"/**
- * ========================== PressResponder Tutorial ==========================
+"/**========================== PressResponder Tutorial ==========================
  *
  * The \`PressResponder\` class helps you create press interactions by analyzing
  * the geometry of elements and observing when another responder (e.g.
@@ -982,8 +920,7 @@ exports[`numbers and code in description 1`] = `
 `;
 
 exports[`numbers and code in description 2`] = `
-"/**
- * 1. A keydown event occurred immediately before a focus event
+"/**1. A keydown event occurred immediately before a focus event
  * 2. A focus event happened on an element which requires keyboard interaction
  *    (e.g., a text field);
  * 3. A focus event happened on an element which requires keyboard interaction
@@ -993,8 +930,7 @@ exports[`numbers and code in description 2`] = `
 `;
 
 exports[`numbers and code in description 3`] = `
-"/**
- * The script uses two heuristics to determine whether the keyboard is being
+"/**The script uses two heuristics to determine whether the keyboard is being
  * used:
  *
  * 1. A keydown event occurred lorem ipsum dolor sit amet, consectetur adipiscing
@@ -1017,8 +953,7 @@ exports[`numbers and code in description 3`] = `
 `;
 
 exports[`numbers and code in description 4`] = `
-"/**
- * Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla
+"/**Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla
  * mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget
  * bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero.
  * Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut,
@@ -1045,8 +980,7 @@ exports[`numbers and code in description 4`] = `
 `;
 
 exports[`printWidth 1`] = `
-"/**
- * A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A
+"/**A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A
  * A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A
  * A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A
  * A

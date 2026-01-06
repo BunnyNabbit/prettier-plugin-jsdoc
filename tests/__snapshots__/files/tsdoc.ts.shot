@@ -1,8 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`File: tsdoc.ts 1`] = `
-"/**
- * @example Adding one adds one
+"/**@example Adding one adds one
  *
  * \`\`\`typescript
  * import plusOne from \\"plus-one\\";
@@ -16,8 +15,7 @@ export function plusOne(input: number) {
   return input + 1;
 }
 
-/**
- * Parses a JSON file.
+/**Parses a JSON file.
  *
  * @example Parsing a basic JSON file
  *
@@ -47,8 +45,7 @@ export function plusOne(input: number) {
  * @returns An object containing the JSON data.
  */
 
-/**
- * Adds two numbers together.
+/**Adds two numbers together.
  *
  * @example Here's a simple example:
  *
@@ -66,8 +63,7 @@ export function add(x: number, y: number): number {
   return x * y;
 }
 
-/**
- * This is a summary for foo.
+/**This is a summary for foo.
  *
  * Foo is the name of the function.
  *
@@ -88,8 +84,7 @@ function foo(num1, num2, num3) {
   //
 }
 
-/**
- * @remarks
+/**@remarks
  * This source code is licensed under the license found in the LICENSE file in
  * the root directory of this source tree.
  * @privateRemarks
@@ -103,8 +98,7 @@ function foo(num1, num2, num3) {
  */
 
 interface DialogProps {
-  /**
-   * Whether the dialog should disable the main content while open
+  /**Whether the dialog should disable the main content while open
    *
    * @defaultValue true
    */

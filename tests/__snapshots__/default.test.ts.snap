@@ -1,8 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`@default filled array 1`] = `
-"/**
- * The summary
+"/**The summary
  *
  * @default [1, "two", { three: true }, ["four"]]
  */
@@ -10,8 +9,7 @@ exports[`@default filled array 1`] = `
 `;
 
 exports[`@default filled object 1`] = `
-"/**
- * The summary
+"/**The summary
  *
  * @default { object: "value", nestingTest: { obj: "nested" } }
  */
@@ -19,8 +17,7 @@ exports[`@default filled object 1`] = `
 `;
 
 exports[`@defaultValue filled array 1`] = `
-"/**
- * The summary
+"/**The summary
  *
  * @defaultValue [1, "two", { three: true }, ["four"]]
  */
@@ -28,8 +25,7 @@ exports[`@defaultValue filled array 1`] = `
 `;
 
 exports[`@defaultValue filled object 1`] = `
-"/**
- * The summary
+"/**The summary
  *
  * @defaultValue { object: "value", nestingTest: { obj: "nested" } }
  */
@@ -37,8 +33,7 @@ exports[`@defaultValue filled object 1`] = `
 `;
 
 exports[`Can't convert double quote @default if a single quote character is in the string 1`] = `
-"/**
- * The summary
+"/**The summary
  *
  * @default "This isn't bad"
  */
@@ -56,8 +51,7 @@ exports[`Single line codegen 1`] = `
 `;
 
 exports[`code in default 1`] = `
-"/**
- * The path to the config file or directory contains the config file.
+"/**The path to the config file or directory contains the config file.
  *
  * @default process.cwd()
  */
@@ -65,8 +59,7 @@ exports[`code in default 1`] = `
 `;
 
 exports[`convert double quote @default to single quote 1`] = `
-"/**
- * The summary
+"/**The summary
  *
  * @default 'value'
  */
@@ -74,8 +67,7 @@ exports[`convert double quote @default to single quote 1`] = `
 `;
 
 exports[`convert single quote @default to double quote 1`] = `
-"/**
- * The summary
+"/**The summary
  *
  * @default "value"
  */
@@ -83,8 +75,7 @@ exports[`convert single quote @default to double quote 1`] = `
 `;
 
 exports[`default empty array 1`] = `
-"/**
- * The summary
+"/**The summary
  *
  * @default [ ]
  */
@@ -92,8 +83,7 @@ exports[`default empty array 1`] = `
 `;
 
 exports[`default empty object 1`] = `
-"/**
- * The summary
+"/**The summary
  *
  * @default {}
  */
@@ -101,8 +91,7 @@ exports[`default empty object 1`] = `
 `;
 
 exports[`default string with description 1`] = `
-"/**
- * The summary
+"/**The summary
  *
  * @default "type" description
  */
@@ -110,8 +99,7 @@ exports[`default string with description 1`] = `
 `;
 
 exports[`double default one 1`] = `
-"/**
- * The summary
+"/**The summary
  *
  * @default "something"
  * @default {}
@@ -120,8 +108,7 @@ exports[`double default one 1`] = `
 `;
 
 exports[`double default two 1`] = `
-"/**
- * The summary
+"/**The summary
  *
  * @default {}
  * @default "something"
@@ -130,8 +117,7 @@ exports[`double default two 1`] = `
 `;
 
 exports[`empty default tag 1`] = `
-"/**
- * The summary
+"/**The summary
  *
  * @default
  */

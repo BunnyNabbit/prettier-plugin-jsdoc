@@ -3,8 +3,7 @@
 exports[`File: prism-dependencies.js 1`] = `
 "'use strict';
 
-/**
- * @typedef {Object<string, ComponentCategory>} Components
+/**@typedef {Object<string, ComponentCategory>} Components
  *
  * @typedef {Object<string, ComponentEntry | string>} ComponentCategory
  *
@@ -24,15 +23,13 @@ exports[`File: prism-dependencies.js 1`] = `
  */
 
 var getLoader = (function () {
-	/**
-	 * A function which does absolutely nothing.
+	/**A function which does absolutely nothing.
 	 *
 	 * @type {any}
 	 */
 	var noop = function () {};
 
-	/**
-	 * Invokes the given callback for all elements of the given value.
+	/**Invokes the given callback for all elements of the given value.
 	 *
 	 * If the given value is an array, the callback will be invokes for all elements. If the given value is \`null\` or
 	 * \`undefined\`, the callback will not be invoked. In all other cases, the callback will be invoked with the given
@@ -53,8 +50,7 @@ var getLoader = (function () {
 		}
 	}
 
-	/**
-	 * Returns a new set for the given string array.
+	/**Returns a new set for the given string array.
 	 *
 	 * @param {string[]} array
 	 *
@@ -71,8 +67,7 @@ var getLoader = (function () {
 		return set;
 	}
 
-	/**
-	 * Creates a map of every components id to its entry.
+	/**Creates a map of every components id to its entry.
 	 *
 	 * @param {Components} components
 	 *
@@ -98,8 +93,7 @@ var getLoader = (function () {
 		return map;
 	}
 
-	/**
-	 * Creates a full dependencies map which includes all types of dependencies and their transitive dependencies.
+	/**Creates a full dependencies map which includes all types of dependencies and their transitive dependencies.
 	 *
 	 * @param {EntryMap} entryMap
 	 *
@@ -112,8 +106,7 @@ var getLoader = (function () {
 		var map = {};
 		var _stackArray = [];
 
-		/**
-		 * Adds the dependencies of the given component to the dependency map.
+		/**Adds the dependencies of the given component to the dependency map.
 		 *
 		 * @param {string} id
 		 * @param {string[]} stack
@@ -136,8 +129,7 @@ var getLoader = (function () {
 
 			var entry = entryMap[id];
 			if (entry) {
-				/**
-				 * This will add the direct dependency and all of its transitive dependencies to the set of dependencies
+				/**This will add the direct dependency and all of its transitive dependencies to the set of dependencies
 				 * of \`entry\`.
 				 *
 				 * @param {string} depId
@@ -180,8 +172,7 @@ var getLoader = (function () {
 		};
 	}
 
-	/**
-	 * Returns a function which resolves the aliases of its given id of alias.
+	/**Returns a function which resolves the aliases of its given id of alias.
 	 *
 	 * @param {EntryMap} entryMap
 	 *
@@ -217,8 +208,7 @@ var getLoader = (function () {
 		};
 	}
 
-	/**
-	 * @template T
+	/**@template T
 	 *
 	 * @typedef LoadChainer
 	 *
@@ -226,8 +216,7 @@ var getLoader = (function () {
 	 * @property {(values: T[]) => T} parallel
 	 */
 
-	/**
-	 * Creates an implicit DAG from the given components and dependencies and call the given \`loadComponent\` for each
+	/**Creates an implicit DAG from the given components and dependencies and call the given \`loadComponent\` for each
 	 * component in topological order.
 	 *
 	 * @template T
@@ -246,15 +235,13 @@ var getLoader = (function () {
 		/** @type {Object<string, T>} */
 		var cache = {};
 
-		/**
-		 * A set of ids of nodes which are not depended upon by any other node in the graph.
+		/**A set of ids of nodes which are not depended upon by any other node in the graph.
 		 *
 		 * @type {StringSet}
 		 */
 		var ends = {};
 
-		/**
-		 * Loads the given component and its dependencies or returns the cached value.
+		/**Loads the given component and its dependencies or returns the cached value.
 		 *
 		 * @param {string} id
 		 *
@@ -277,8 +264,7 @@ var getLoader = (function () {
 				}
 			}
 
-			/**
-			 * The value to be returned.
+			/**The value to be returned.
 			 *
 			 * @type {T}
 			 */
@@ -322,8 +308,7 @@ var getLoader = (function () {
 		return parallel(endValues);
 	}
 
-	/**
-	 * Returns whether the given object has any keys.
+	/**Returns whether the given object has any keys.
 	 *
 	 * @param {object} obj
 	 */
@@ -334,8 +319,7 @@ var getLoader = (function () {
 		return false;
 	}
 
-	/**
-	 * Returns an object which provides methods to get the ids of the components which have to be loaded (\`getIds\`) and
+	/**Returns an object which provides methods to get the ids of the components which have to be loaded (\`getIds\`) and
 	 * a way to efficiently load them in synchronously and asynchronous contexts (\`load\`).
 	 *
 	 * The set of ids to be loaded is a superset of \`load\`. If some of these ids are in \`loaded\`, the corresponding

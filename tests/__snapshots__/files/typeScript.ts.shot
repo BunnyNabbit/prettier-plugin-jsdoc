@@ -2,8 +2,7 @@
 
 exports[`File: typeScript.ts 1`] = `
 "//@ts-nocheck
-/**
- * @typedef {{
+/**@typedef {{
  *   userId: string;
  *   title: string;
  *   profileImageLink: string;
@@ -24,8 +23,7 @@ exports[`File: typeScript.ts 1`] = `
  */
 export let User: string;
 
-/**
- * @typedef {{
+/**@typedef {{
  *   domainId: 0;
  *   persianName: string;
  *   englishName: string; // comment
@@ -42,8 +40,7 @@ export let User: string;
  */
 
 /** @typedef {() => a.b} SubDomain */
-/**
- * @typedef {{
+/**@typedef {{
  *   userId: {
  *     title: string;
  *     profileImageLink: any;
@@ -57,8 +54,7 @@ export let User: string;
  */
 
 class test {
-  /**
-   * Replaces text in a string, using a regular expression or search string.
+  /**Replaces text in a string, using a regular expression or search string.
    *
    * @param {string | RegExp} searchValue A string to search for.
    * @param {string | (substring: string, ...args: any[]) => string} replaceValue
@@ -77,8 +73,7 @@ class test {
    */
   replace(searchValue: any, replaceValue: any) {
     class test {
-      /**
-       * Replaces text in a string, using a regular expression or search string.
+      /**Replaces text in a string, using a regular expression or search string.
        *
        * @param {string | RegExp} searchValue A string to search for.
        * @param {string | (substring: string, ...args: any[]) => string} replaceValue
@@ -104,13 +99,11 @@ class test {
 }
 export interface FetchCallbackResponseArray<T, V> {
   resource: Resource<T>;
-  /**
-   * @deprecated Resolve clear with condition in your fetch api this function
+  /**@deprecated Resolve clear with condition in your fetch api this function
    *   will be remove
    */
   refetch: (...arg: V[]) => void;
-  /**
-   * @deprecated Resolve clear with condition in your fetch api this function
+  /**@deprecated Resolve clear with condition in your fetch api this function
    *   will be remove
    */
   clear: () => void;

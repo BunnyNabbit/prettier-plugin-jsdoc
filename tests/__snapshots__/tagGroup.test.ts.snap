@@ -1,8 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Inconsistant formatting 1`] = `
-"/**
- * Aliquip ex proident tempor eiusmod aliquip amet. Labore commodo nulla
+"/**Aliquip ex proident tempor eiusmod aliquip amet. Labore commodo nulla
  * tempor consequat exercitation incididunt non. Duis laboris reprehenderit
  * proident proident.
  *
@@ -21,8 +20,7 @@ exports[`Inconsistant formatting 1`] = `
 `;
 
 exports[`Tag group 1`] = `
-"/**
- * Aliquip ex proident tempor eiusmod aliquip amet. Labore commodo nulla
+"/**Aliquip ex proident tempor eiusmod aliquip amet. Labore commodo nulla
  * tempor consequat exercitation incididunt non. Duis laboris reprehenderit
  * proident proident.
  *
@@ -45,8 +43,7 @@ exports[`Tag group 1`] = `
 `;
 
 exports[`space after unknownTag 1`] = `
-"/**
- * A description.
+"/**A description.
  *
  * @unknownTag A note.
  *

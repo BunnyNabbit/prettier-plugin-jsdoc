@@ -24,16 +24,14 @@ exports[`Bad defined name 1`] = `
 "/** @type {import("@jest/types/build/Config").InitialOptions} */
 /** @type {{ foo: string }} */
 
-/**
- * @typedef {import("@jest/types/build/Config").InitialOptions} name A
+/**@typedef {import("@jest/types/build/Config").InitialOptions} name A
  *   description
  */
 "
 `;
 
 exports[`Big single word 1`] = `
-"/**
- * Simple Single Word
+"/**Simple Single Word
  * https://github.com/babel/babel/pull/7934/files#diff-a739835084910b0ee3ea649df5a4d223R67
  */
 "
@@ -45,8 +43,7 @@ exports[`Block quote 1`] = `
 `;
 
 exports[`Block quote 2`] = `
-"/**
- * > \`\`\`js
+"/**> \`\`\`js
  * > > A block quote
  * > \`\`\`
  *
@@ -94,8 +91,7 @@ exports[`File with just an import 1`] = `
 `;
 
 exports[`Format rest parameters properly 1`] = `
-"/**
- * @param {...any} arg1
+"/**@param {...any} arg1
  * @param {...number} arg2
  * @param {...(string | number)} arg3
  * @param {...(string | number)} arg4 This is equivalent to arg3
@@ -105,8 +101,7 @@ function a() {}
 `;
 
 exports[`Hyphen at the start of description 1`] = `
-"/**
- * Assign the project to an employee.
+"/**Assign the project to an employee.
  *
  * @param {Object} employee - The employee who is responsible for the project.
  * @param {string} employee.name - The name of the employee.
@@ -145,8 +140,7 @@ const someLongList = [
 `;
 
 exports[`Long description memory leak 1`] = `
-"/**
- * Configures custom logging for the {@link @microsoft/signalr.HubConnection}.
+"/**Configures custom logging for the {@link @microsoft/signalr.HubConnection}.
  *
  * https://example.com
  *
@@ -166,8 +160,7 @@ exports[`Mixed empty and non-empty JSDoc comments - with jsdocEmptyCommentStrate
 "/**/
 function emptyDoc() {}
 
-/**
- * This has content
+/**This has content
  *
  * @param {string} name
  */
@@ -191,8 +184,7 @@ exports[`Non-jsdoc comment 1`] = `
 `;
 
 exports[`Optional parameters 1`] = `
-"/**
- * @param {number} [arg1]
+"/**@param {number} [arg1]
  * @param {number} [arg2]
  * @param {number} [arg3=4] Default is \`4\`
  */
@@ -200,8 +192,7 @@ exports[`Optional parameters 1`] = `
 `;
 
 exports[`Optional params 1`] = `
-"/**
- * @param {string} [p2] - An optional param (Google Closure syntax)
+"/**@param {string} [p2] - An optional param (Google Closure syntax)
  * @param {string} [p3] - Another optional param (JSDoc syntax).
  * @returns {string | undefined}
  */
@@ -209,8 +200,7 @@ exports[`Optional params 1`] = `
 `;
 
 exports[`Should align vertically param|property|returns|yields|throws if option set to true, and amount of spaces is different than default 1`] = `
-"/**
- * @property  {Object}          unalginedProp   Unaligned property descriptin
+"/**@property  {Object}          unalginedProp   Unaligned property descriptin
  * @param     {String}          unalginedParam  Unaligned param description
  * @yields    {Number}                          Yields description
  * @returns   {undefined}
@@ -220,8 +210,7 @@ exports[`Should align vertically param|property|returns|yields|throws if option 
 `;
 
 exports[`Should align vertically param|property|returns|yields|throws if option set to true, and amount of spaces is different than default 2`] = `
-"/**
- * @property    {Object}            unalginedProp     Unaligned property
+"/**@property    {Object}            unalginedProp     Unaligned property
  *   descriptin
  * @param       {String}            unalginedParam    Unaligned param
  *   description
@@ -245,8 +234,7 @@ exports[`Should convert to single line if necessary 2`] = `
 `;
 
 exports[`Should convert to single line if necessary 3`] = `
-"/**
- * Single line description
+"/**Single line description
  *
  * @returns {Boolean} Always true
  */
@@ -254,22 +242,19 @@ exports[`Should convert to single line if necessary 3`] = `
 `;
 
 exports[`Should convert to single multiLine 1`] = `
-"/**
- * Single line description
+"/**Single line description
  */
 "
 `;
 
 exports[`Should convert to single multiLine 2`] = `
-"/**
- * Single line description
+"/**Single line description
  */
 "
 `;
 
 exports[`Should convert to single multiLine 3`] = `
-"/**
- * Single line description
+"/**Single line description
  *
  * @returns {Boolean} Always true
  */
@@ -277,8 +262,7 @@ exports[`Should convert to single multiLine 3`] = `
 `;
 
 exports[`Should format jsDoc default values 1`] = `
-"/**
- * @param {String} [arg1="defaultTest"] Foo. Default is \`"defaultTest"\`
+"/**@param {String} [arg1="defaultTest"] Foo. Default is \`"defaultTest"\`
  * @param {number} [arg2=123] The width of the rectangle. Default is \`123\`
  * @param {number} [arg3=123] Default is \`123\`
  * @param {number} [arg4=Foo.bar.baz] Default is \`Foo.bar.baz\`
@@ -288,8 +272,7 @@ exports[`Should format jsDoc default values 1`] = `
 `;
 
 exports[`Should format jsDoc default values 2`] = `
-"/**
- * @param {String} [arg1="defaultTest"] Foo. Default is \`"defaultTest"\`
+"/**@param {String} [arg1="defaultTest"] Foo. Default is \`"defaultTest"\`
  * @param {number} [arg2=123] The width of the rectangle. Default is \`123\`
  * @param {number} [arg3=123] Default is \`123\`
  * @param {number} [arg4=Foo.bar.baz] Default is \`Foo.bar.baz\`
@@ -299,8 +282,7 @@ exports[`Should format jsDoc default values 2`] = `
 `;
 
 exports[`Should format jsDoc default values 3`] = `
-"/**
- * @param {String} [arg1="defaultTest"] Foo
+"/**@param {String} [arg1="defaultTest"] Foo
  * @param {number} [arg2=123] The width of the rectangle
  * @param {number} [arg3=123]
  * @param {number} [arg4=Foo.bar.baz]
@@ -310,8 +292,7 @@ exports[`Should format jsDoc default values 3`] = `
 `;
 
 exports[`Should format regular jsDoc 1`] = `
-"/**
- * Function example description that was wrapped by hand so it have more then
+"/**Function example description that was wrapped by hand so it have more then
  * one line and don't end with a dot REPEATED TWO TIMES BECAUSE IT WAS EASIER to
  * copy function example description that was wrapped by hand so it have more
  * then one line.
@@ -340,8 +321,7 @@ const testFunction = (text, defaultValue, optionalNumber) => true;
 `;
 
 exports[`Should format regular jsDoc 2`] = `
-"/**
- * Function example description that was wrapped by hand so it have more then
+"/**Function example description that was wrapped by hand so it have more then
  * one line and don't end with a dot REPEATED TWO TIMES BECAUSE IT WAS EASIER to
  * copy function example description that was wrapped by hand so it have more
  * then one line.
@@ -370,8 +350,7 @@ const testFunction = (text, defaultValue, optionalNumber) => true;
 `;
 
 exports[`Should insert proper amount of spaces based on option 1`] = `
-"/**
- * @param  {Object}  paramName  Param description that goes on and on and on
+"/**@param  {Object}  paramName  Param description that goes on and on and on
  *   utill it will need to be wrapped
  * @returns  {Number}  Return description
  */
@@ -379,8 +358,7 @@ exports[`Should insert proper amount of spaces based on option 1`] = `
 `;
 
 exports[`Should insert proper amount of spaces based on option 2`] = `
-"/**
- * @param   {Object}   paramName   Param description that goes on and on and on
+"/**@param   {Object}   paramName   Param description that goes on and on and on
  *   utill it will need to be wrapped
  * @returns   {Number}   Return description
  */
@@ -413,8 +391,7 @@ exports[`Should keep defined inner types 5`] = `
 `;
 
 exports[`Should respect jsdocBracketSpacing option (false - default) 1`] = `
-"/**
- * Function with type annotations
+"/**Function with type annotations
  *
  * @param {string} name - The name parameter
  * @param {number} age - The age parameter
@@ -425,8 +402,7 @@ function example(name, age) {}
 `;
 
 exports[`Should respect jsdocBracketSpacing option (true) 1`] = `
-"/**
- * Function with type annotations
+"/**Function with type annotations
  *
  * @param { string } name - The name parameter
  * @param { number } age - The age parameter
@@ -437,8 +413,7 @@ function example(name, age) {}
 `;
 
 exports[`Sould keep complex inner types 1`] = `
-"/**
- * @param {(String | Number)[]} test Test param
+"/**@param {(String | Number)[]} test Test param
  * @param {Object<String, Number>[]} test Test param
  * @param {...Number} test Test param
  * @param {Number | null} test Test param
@@ -459,8 +434,7 @@ exports[`Sould keep complex inner types 2`] = `
 `;
 
 exports[`Sould keep params ordering when more than 10 tags are present 1`] = `
-"/**
- * Description
+"/**Description
  *
  * @param {Number} test1 Test param
  * @param {Number} test2 Test param
@@ -480,8 +454,7 @@ exports[`Sould keep params ordering when more than 10 tags are present 1`] = `
 `;
 
 exports[`default type parameter  1`] = `
-"/**
- * @template [BAR=({bar:true}&{foo:false}&{buggy:true})] Default is
+"/**@template [BAR=({bar:true}&{foo:false}&{buggy:true})] Default is
  *   \`({bar:true}&{foo:false}&{buggy:true})\`
  * @typedef {{ foo: BAR }} SomeType
  */
@@ -489,8 +462,7 @@ exports[`default type parameter  1`] = `
 `;
 
 exports[`example  1`] = `
-"/**
- * ABCCCC
+"/**ABCCCC
  *
  * @example <caption>DDDD</caption>
  *   const MyHook = () => {
@@ -510,8 +482,7 @@ exports[`example  1`] = `
 `;
 
 exports[`example with tab intention 1`] = `
-"/**
- * @example
+"/**@example
  * 	function Hello() {
  * 		console.log("Hello World");
  * 	}
@@ -520,13 +491,11 @@ exports[`example with tab intention 1`] = `
 `;
 
 exports[`jsdoc tags 1`] = `
-"/**
- * @namespace
+"/**@namespace
  * @borrows trstr as trim
  */
 
-/**
- * Whether the type should be non null, \`required: true\` = \`nullable: false\`
+/**Whether the type should be non null, \`required: true\` = \`nullable: false\`
  *
  * @default (depends on whether nullability is configured in type or schema)
  * @see declarativeWrappingPlugin
@@ -540,8 +509,7 @@ exports[`jsdoc tags 2`] = `
 `;
 
 exports[`non-escapable character 1`] = `
-"/**
- * \\
+"/**\\
  *
  * \\-
  */
@@ -554,24 +522,21 @@ exports[`non-escapable character 2`] = `
 `;
 
 exports[`param order 1`] = `
-"/**
- * @param {string} param0 Description
+"/**@param {string} param0 Description
  * @param {object} param1 Description
  * @param {number} param2 Description
  */
 function fun(param0, param1, param2) {}
 
 export const SubDomain = {
-  /**
-   * @param subDomainAddress2
+  /**@param subDomainAddress2
    * @param {any} subDomainAddress
    * @returns {import("axios").AxiosResponse<import("../types").SubDomain>}
    */
   async subDomain(subDomainAddress2, subDomainAddress) {},
 };
 
-/**
- * @param {string} param0 Description
+/**@param {string} param0 Description
  * @param {object} param1 Description
  * @param {number} param2 Description
  */
@@ -582,8 +547,7 @@ const fun = (param0, param1, param2) => {
 `;
 
 exports[`param order 2`] = `
-"/**
- * @param {string} a      - A for foo.
+"/**@param {string} a      - A for foo.
  * @param {object} c      - Options.
  * @param {object} opts   - Options.
  * @param {string} opts.b - Option b.
@@ -598,8 +562,7 @@ foo("a", { b: "b" });
 `;
 
 exports[`param order 3`] = `
-"/**
- * @param {string} param0 Description
+"/**@param {string} param0 Description
  * @param {number} param2 Description
  * @param {object} param1 Description
  */
@@ -607,8 +570,7 @@ const fun = (param0: () => {}, param1: number, param2) => {
   console.log("");
 };
 
-/**
- * @param {string} param0 Description
+/**@param {string} param0 Description
  * @param {object} param1 Description
  * @param {number} param2 Description
  */
@@ -617,8 +579,7 @@ function fun(param0: string, param1: {}, param2: () => {}) {}
 `;
 
 exports[`satisfies 1`] = `
-"/**
- * Bounce give a renderContent and show that around children when isVisible is
+"/**Bounce give a renderContent and show that around children when isVisible is
  * true
  *
  * @example

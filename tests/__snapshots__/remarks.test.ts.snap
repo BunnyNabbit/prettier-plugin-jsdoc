@@ -1,8 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Description start with markdown 1`] = `
-"/**
- * Just a simple test
+"/**Just a simple test
  *
  * @remarks
  * - Remark 1
@@ -13,8 +12,7 @@ exports[`Description start with markdown 1`] = `
 `;
 
 exports[`Description start with markdown 2`] = `
-"/**
- * Just a simple test
+"/**Just a simple test
  *
  * @remarks
  *   - Remark 1

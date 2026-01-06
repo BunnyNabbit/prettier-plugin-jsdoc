@@ -1,8 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`File: order-custom.jsx 1`] = `
-"/**
- * @property {string} language
+"/**@property {string} language
  * @property {string} type
  * @property {string} content
  * @param {string} className
@@ -15,8 +14,7 @@ exports[`File: order-custom.jsx 1`] = `
  * @returns {undefined | string | string[]}
  */
 
-/**
- * Returns an object which provides methods to get the ids of the components
+/**Returns an object which provides methods to get the ids of the components
  * which have to be loaded (\`getIds\`) and a way to efficiently load them in
  * synchronously and asynchronous contexts (\`load\`).
  *
@@ -70,8 +68,7 @@ exports[`File: order-custom.jsx 1`] = `
  *   );
  */
 
-/**
- * Function example description that was wrapped by hand so it have more then
+/**Function example description that was wrapped by hand so it have more then
  * one line and don't end with a dot REPEATED TWO TIMES BECAUSE IT WAS EASIER to
  * copy function example description that was wrapped by hand so it have more
  * then one line.

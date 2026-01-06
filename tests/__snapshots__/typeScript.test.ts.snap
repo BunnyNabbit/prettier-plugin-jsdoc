@@ -6,8 +6,7 @@ exports[`Default export 1`] = `
 `;
 
 exports[`JS code should be formatted as usuall 1`] = `
-"/**
- * @typedef {{
+"/**@typedef {{
  *   userId: string;
  *   title: string;
  *   profileImageLink: string;
@@ -28,8 +27,7 @@ exports[`JS code should be formatted as usuall 1`] = `
  */
 export let User;
 
-/**
- * @typedef {{
+/**@typedef {{
  *   domainId: 0;
  *   persianName: string;
  *   englishName: string; // comment
@@ -50,8 +48,7 @@ export let User;
 `;
 
 exports[`Long type Union types 1`] = `
-"/**
- * Gets a configuration object assembled from environment variables and .env
+"/**Gets a configuration object assembled from environment variables and .env
  * configuration files.
  *
  * @memberof Config
@@ -67,8 +64,7 @@ export default () => configurator.config;
 `;
 
 exports[`Union types 1`] = `
-"/**
- * @typedef {{ foo: string }
+"/**@typedef {{ foo: string }
  *   | { bar: string; manyMoreLongArguments: object }
  *   | { baz: string }} Foo
  */
@@ -78,13 +74,11 @@ exports[`Union types 1`] = `
 exports[`description in interface 1`] = `
 "export interface FetchCallbackResponseArray<T, V> {
   resource: Resource<T>;
-  /**
-   * @deprecated Resolve clear with condition in your fetch api this function
+  /**@deprecated Resolve clear with condition in your fetch api this function
    *   will be remove
    */
   refetch: (...arg: V[]) => void;
-  /**
-   * @deprecated Resolve clear with condition in your fetch api this function
+  /**@deprecated Resolve clear with condition in your fetch api this function
    *   will be remove
    */
   clear: () => void;
@@ -93,8 +87,7 @@ exports[`description in interface 1`] = `
 `;
 
 exports[`hoisted object 1`] = `
-"/**
- * @typedef {{
+"/**@typedef {{
  *   userId: {
  *     title: string;
  *     profileImageLink: any;
@@ -111,8 +104,7 @@ exports[`hoisted object 1`] = `
 
 exports[`max width challenge 1`] = `
 "class test {
-  /**
-   * Replaces text in a string, using a regular expression or search string.
+  /**Replaces text in a string, using a regular expression or search string.
    *
    * @param {string | RegExp} searchValue A string to search for.
    * @param {string | (substring: string, ...args: any[]) => string} replaceValue
@@ -131,8 +123,7 @@ exports[`max width challenge 1`] = `
    */
   replace(searchValue, replaceValue) {
     class test {
-      /**
-       * Replaces text in a string, using a regular expression or search string.
+      /**Replaces text in a string, using a regular expression or search string.
        *
        * @param {string | RegExp} searchValue A string to search for.
        * @param {string | (substring: string, ...args: any[]) => string} replaceValue
@@ -160,8 +151,7 @@ exports[`max width challenge 1`] = `
 `;
 
 exports[`type imports 1`] = `
-"/**
- * @import {A} from "modulea"
+"/**@import {A} from "modulea"
  * @import BMain, {
  *   B as B1,
  *   B2,
@@ -170,16 +160,14 @@ exports[`type imports 1`] = `
  * } from "moduleb"
  * @typedef {Object} Foo
  */
-/**
- * @import C from "modulec"
+/**@import C from "modulec"
  * @import BDefault, {B5} from "./moduleb"
  */
 "
 `;
 
 exports[`type imports with import merging turned off 1`] = `
-"/**
- * @import {A} from "modulea"
+"/**@import {A} from "modulea"
  * @import BM, {
  *   B as B1,
  *   B2,
@@ -188,29 +176,25 @@ exports[`type imports with import merging turned off 1`] = `
  * @import BMain, {B3} from "moduleb"
  * @typedef {Object} Foo
  */
-/**
- * @import C from "modulec"
+/**@import C from "modulec"
  * @import BDefault, {B5} from "./moduleb"
  */
 "
 `;
 
 exports[`type imports with named import line splitting turned off 1`] = `
-"/**
- * @import {A} from "modulea"
+"/**@import {A} from "modulea"
  * @import BMain, {B as B1, B2, B3, B4} from "moduleb"
  * @typedef {Object} Foo
  */
-/**
- * @import C from "modulec"
+/**@import C from "modulec"
  * @import BDefault, {B5} from "./moduleb"
  */
 "
 `;
 
 exports[`type imports with named import padding 1`] = `
-"/**
- * @import { A } from "modulea"
+"/**@import { A } from "modulea"
  * @import BMain, {
  *   B as B1,
  *   B2,
@@ -219,23 +203,20 @@ exports[`type imports with named import padding 1`] = `
  * } from "moduleb"
  * @typedef {Object} Foo
  */
-/**
- * @import C from "modulec"
+/**@import C from "modulec"
  * @import BDefault, { B5 } from "./moduleb"
  */
 "
 `;
 
 exports[`type imports with no import formatting 1`] = `
-"/**
- * @import BM, { B as B1,
+"/**@import BM, { B as B1,
  * B2   , B4 } from 'moduleb'
  * @import BMain, {B3  } from "moduleb"
  * @import {A} from 'modulea'
  * @typedef {Object} Foo
  */
-/**
- * @import BDefault, {        B5 } from   './moduleb'
+/**@import BDefault, {        B5 } from   './moduleb'
  * @import C from    "modulec"
  */
 "

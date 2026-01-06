@@ -1,8 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`File: typeScript.js 1`] = `
-"/**
- * @typedef {{
+"/**@typedef {{
  *   userId: string;
  *   title: string;
  *   profileImageLink: string;
@@ -23,8 +22,7 @@ exports[`File: typeScript.js 1`] = `
  */
 export let User;
 
-/**
- * @typedef {{
+/**@typedef {{
  *   domainId: 0;
  *   persianName: string;
  *   englishName: string; // comment
@@ -41,8 +39,7 @@ export let User;
  */
 
 /** @typedef {() => a.b} SubDomain */
-/**
- * @typedef {{
+/**@typedef {{
  *   userId: {
  *     title: string;
  *     profileImageLink: any;
@@ -56,8 +53,7 @@ export let User;
  */
 
 class test {
-  /**
-   * Replaces text in a string, using a regular expression or search string.
+  /**Replaces text in a string, using a regular expression or search string.
    *
    * @param {string | RegExp} searchValue A string to search for.
    * @param {string | (substring: string, ...args: any[]) => string} replaceValue
@@ -76,8 +72,7 @@ class test {
    */
   replace(searchValue, replaceValue) {
     class test {
-      /**
-       * Replaces text in a string, using a regular expression or search string.
+      /**Replaces text in a string, using a regular expression or search string.
        *
        * @param {string | RegExp} searchValue A string to search for.
        * @param {string | (substring: string, ...args: any[]) => string} replaceValue
@@ -106,8 +101,7 @@ class test {
 `;
 
 exports[`File: typeScript.js 2`] = `
-"/**
- * @typedef {{
+"/**@typedef {{
  *   userId: string;
  *   title: string;
  *   profileImageLink: string;
@@ -128,8 +122,7 @@ exports[`File: typeScript.js 2`] = `
  */
 export let User;
 
-/**
- * @typedef {{
+/**@typedef {{
  *   domainId: 0;
  *   persianName: string;
  *   englishName: string; // comment
@@ -146,8 +139,7 @@ export let User;
  */
 
 /** @typedef {() => a.b} SubDomain */
-/**
- * @typedef {{
+/**@typedef {{
  *   userId: {
  *     title: string;
  *     profileImageLink: any;
@@ -161,8 +153,7 @@ export let User;
  */
 
 class test {
-  /**
-   * Replaces text in a string, using a regular expression or search string.
+  /**Replaces text in a string, using a regular expression or search string.
    *
    * @param {string | RegExp} searchValue A string to search for.
    * @param {string | (substring: string, ...args: any[]) => string} replaceValue
@@ -181,8 +172,7 @@ class test {
    */
   replace(searchValue, replaceValue) {
     class test {
-      /**
-       * Replaces text in a string, using a regular expression or search string.
+      /**Replaces text in a string, using a regular expression or search string.
        *
        * @param {string | RegExp} searchValue A string to search for.
        * @param {string | (substring: string, ...args: any[]) => string} replaceValue

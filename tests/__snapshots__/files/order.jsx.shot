@@ -1,8 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`File: order.jsx 1`] = `
-"/**
- * @callback ClassMapper
+"/**@callback ClassMapper
  * @param {string} className
  * @param {string} language
  * @returns {string}

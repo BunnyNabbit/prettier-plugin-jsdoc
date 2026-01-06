@@ -1,8 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`extends 1`] = `
-"/**
- * The bread crumbs indicate the navigate path and trigger the active page.
+"/**The bread crumbs indicate the navigate path and trigger the active page.
  *
  * @class
  * @extends {PureComponent<props>}
@@ -14,8 +13,7 @@ export class BreadCrumbs extends PureComponent {}
 `;
 
 exports[`template for callback 1`] = `
-"/**
- * @template T
+"/**@template T
  * @callback CallbackName
  * @param {GetStyles<T>} getStyles
  *
@@ -25,8 +23,7 @@ exports[`template for callback 1`] = `
 `;
 
 exports[`template for callback 2`] = `
-"/**
- * @template T
+"/**@template T
  * @template H
  * @param {GetStyles<T>} getStyles
  *
@@ -41,8 +38,7 @@ exports[`template for callback 2`] = `
 `;
 
 exports[`typeParam for callback 1`] = `
-"/**
- * @typeParam T
+"/**@typeParam T
  * @callback CallbackName
  * @param {GetStyles<T>} getStyles
  *

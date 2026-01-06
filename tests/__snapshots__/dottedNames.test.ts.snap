@@ -1,8 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`dotted names function param 1`] = `
-"/**
- * @param {object} data
+"/**@param {object} data
  * @param {string} data.userName
  * @param {string} data.password
  *

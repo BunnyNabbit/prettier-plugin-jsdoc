@@ -4,8 +4,7 @@ exports[`File: types.ts 1`] = `
 "/** @type {((element: HTMLElement) => boolean)[]} */
 var filters = [];
 
-/**
- * Returns a slice of the first array that doesn't contain the leading and
+/**Returns a slice of the first array that doesn't contain the leading and
  * trailing elements the both arrays have in common.
  *
  * Examples:
@@ -28,8 +27,7 @@ var filters = [];
  * @returns {T[]}
  */
 
-/**
- * Returns a slice of the first array that doesn't contain the leading and
+/**Returns a slice of the first array that doesn't contain the leading and
  * trailing elements the both arrays have in common.
  *
  * Examples:

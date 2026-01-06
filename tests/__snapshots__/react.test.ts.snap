@@ -8,8 +8,7 @@ import * as array from "d3-array";
 import Svg, { G, Text as SVGText } from "react-native-svg";
 import { useLayout, useInlineStyle } from "./hooks";
 
-/**
- * @typedef {object} XAxisProps
+/**@typedef {object} XAxisProps
  * @property {number} [spacingOuter] Spacing between the labels. Only
  *   applicable if \`scale=d3Scale.scaleBand\` and should then be equal to
  *   \`spacingOuter\` prop on the actual BarChart
