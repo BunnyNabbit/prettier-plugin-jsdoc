@@ -17,13 +17,12 @@
     "dist"
   ],
   "scripts": {
-    "prepare": "yarn build",
     "lint": "eslint --ext '.ts' ./src",
     "test": "yarn build --test && NODE_OPTIONS=\"--loader ts-node/esm\" jest",
     "release": "standard-version && yarn publish && git push --follow-tags origin master",
     "prettierAll": "prettier --write \"**/*.ts\"",
     "clean": "rm -fr dist",
-    "build": "chmod +x ./script.sh && ./script.sh"
+    "build": "./script.sh"
   },
   "author": "BunnyNabbit \"Aon Langton\"",
   "license": "MIT",
