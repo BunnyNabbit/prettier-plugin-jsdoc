@@ -1,7 +1,7 @@
 {
-  "name": "prettier-plugin-jsdoc",
+  "name": "prettier-plugin-drone-jsdoc",
   "version": "1.8.0",
-  "description": "A Prettier plugin to format JSDoc comments.",
+  "description": "Fork of prettier-plugin-jsdoc.",
   "private": false,
   "type": "module",
   "exports": {
@@ -25,21 +25,12 @@
     "clean": "rm -fr dist",
     "build": "chmod +x ./script.sh && ./script.sh"
   },
-  "keywords": [
-    "prettier",
-    "plugin",
-    "jsdoc",
-    "comment"
-  ],
-  "author": "Hossein mohammadi (hosseinm.developer@gmail.com)",
+  "author": "BunnyNabbit \"Aon Langton\"",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/hosseinmd/prettier-plugin-jsdoc/issues"
-  },
-  "homepage": "https://github.com/hosseinmd/prettier-plugin-jsdoc#readme",
+  "homepage": "https://github.com/BunnyNabbit/prettier-plugin-jsdoc#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hosseinmd/prettier-plugin-jsdoc.git"
+    "url": "git+https://github.com/BunnyNabbit/prettier-plugin-jsdoc.git"
   },
   "devDependencies": {
     "prettier-plugin-tailwindcss": "^0.7.1",
